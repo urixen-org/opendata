@@ -70,11 +70,779 @@
       }
     },
     {
+      "id": "pufferfish",
+      "name": "Pufferfish",
+      "description": "Paper fork with performance optimizations",
+      "provider": "pufferfish",
+      "type": "PUFFERFISH",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "spigot",
+      "name": "Spigot",
+      "description": "Popular Bukkit fork with plugin support",
+      "provider": "spigotmc",
+      "type": "SPIGOT",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "folia",
+      "name": "Folia",
+      "description": "Paper fork with multithreading support",
+      "provider": "papermc",
+      "type": "FOLIA",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "purpur",
+      "name": "Purpur",
+      "description": "Paper fork with additional features and configurability",
+      "provider": "purpurmc",
+      "type": "PURPUR",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "waterfall",
+      "name": "Waterfall",
+      "description": "BungeeCord fork with improvements",
+      "provider": "papermc",
+      "type": "WATERFALL",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "velocity",
+      "name": "Velocity",
+      "description": "Modern Minecraft proxy with performance focus",
+      "provider": "papermc",
+      "type": "VELOCITY",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
       "id": "fabric",
       "name": "Fabric",
       "description": "Lightweight modded Minecraft server",
       "provider": "fabricmc",
       "type": "FABRIC",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "bungeecord",
+      "name": "BungeeCord",
+      "description": "Minecraft proxy server for connecting multiple servers",
+      "provider": "spigotmc",
+      "type": "BUNGEECORD",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "quilt",
+      "name": "Quilt",
+      "description": "Community-driven modding toolchain fork of Fabric",
+      "provider": "quiltmc",
+      "type": "QUILT",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "forge",
+      "name": "Forge",
+      "description": "Classic modded Minecraft server platform",
+      "provider": "minecraftforge",
+      "type": "FORGE",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "neoforge",
+      "name": "NeoForge",
+      "description": "Modern continuation of Forge modding platform",
+      "provider": "neoforged",
+      "type": "NEOFORGE",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "mohist",
+      "name": "Mohist",
+      "description": "Hybrid server combining Forge mods and Bukkit plugins",
+      "provider": "mohist",
+      "type": "MOHIST",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "arclight",
+      "name": "Arclight",
+      "description": "Forge/NeoForge and Bukkit hybrid server",
+      "provider": "arclight",
+      "type": "ARCLIGHT",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "sponge",
+      "name": "Sponge",
+      "description": "Plugin API for Minecraft servers",
+      "provider": "spongepowered",
+      "type": "SPONGE",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "leaves",
+      "name": "Leaves",
+      "description": "Paper fork with additional features",
+      "provider": "leaves",
+      "type": "LEAVES",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "canvas",
+      "name": "Canvas",
+      "description": "Minecraft server software",
+      "provider": "canvas",
+      "type": "CANVAS",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "aspaper",
+      "name": "AsPaper",
+      "description": "Paper fork with Chinese optimizations",
+      "provider": "aspaper",
+      "type": "ASPAPER",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "legacy_fabric",
+      "name": "Legacy Fabric",
+      "description": "Fabric for older Minecraft versions",
+      "provider": "fabricmc",
+      "type": "LEGACY_FABRIC",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "loohp_limbo",
+      "name": "Loohp Limbo",
+      "description": "Lightweight Minecraft limbo server",
+      "provider": "loohp",
+      "type": "LOOHP_LIMBO",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "nanolimbo",
+      "name": "NanoLimbo",
+      "description": "Minimal Minecraft limbo server",
+      "provider": "nanolimbo",
+      "type": "NANOLIMBO",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "divinemc",
+      "name": "DivineMC",
+      "description": "Minecraft server software with enhancements",
+      "provider": "divinemc",
+      "type": "DIVINEMC",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "magma",
+      "name": "Magma",
+      "description": "Forge and Bukkit hybrid server",
+      "provider": "magma",
+      "type": "MAGMA",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "leaf",
+      "name": "Leaf",
+      "description": "Paper fork with additional optimizations",
+      "provider": "leaf",
+      "type": "LEAF",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "velocity_ctd",
+      "name": "Velocity CTD",
+      "description": "Velocity proxy with custom modifications",
+      "provider": "velocity",
+      "type": "VELOCITY_CTD",
+      "api": {
+        "versions": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}",
+          "fields": ["projectVersionId", "versionId"]
+        },
+        "build": {
+          "url": "https://mcjars.app/api/v2/builds/{{software}}/{{version}}",
+          "fields": [
+            "id",
+            "type",
+            "projectVersionId",
+            "versionId",
+            "name",
+            "experimental",
+            "created",
+            "changes",
+            "installation"
+          ]
+        }
+      },
+      "mapping": {
+        "software": "{{software.id}}",
+        "version": "versionId",
+        "build": "installation"
+      }
+    },
+    {
+      "id": "youer",
+      "name": "Youer",
+      "description": "Minecraft server software with custom features",
+      "provider": "youer",
+      "type": "YOUER",
       "api": {
         "versions": {
           "url": "https://mcjars.app/api/v2/builds/{{software}}",
