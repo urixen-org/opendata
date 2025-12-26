@@ -3,7 +3,7 @@
   "name": "Minecraft server software registry",
   "description": "Central registry of Minecraft server software and their APIs for the Rexon panel (urixen-org)",
   "author": "nehxurai <samirthegamer717@gmail.com>",
-  "license": "MIT<https://opensource.org/license/mit>",
+  "license": "CC-BY<https://creativecommons.org/licenses/by/4.0/>",
   "softwares": [
     {
       "id": "vanilla",
